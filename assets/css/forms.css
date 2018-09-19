@@ -1,0 +1,211 @@
+/* Forms */
+.form-item label {
+}
+
+input.text,
+select,
+textarea {
+    font-size: 16px;
+    color: #333;
+}
+
+input.text:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+input.text,
+select {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #dcdfe1;
+    border-radius: 5px;
+
+    background-color: #fff;
+}
+
+input.text {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+input.text::placeholder {
+    color: #adadad;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    height: 177px;
+    border: 1px solid #dcdfe1;
+    border-radius: 5px;
+    resize: none;
+
+}
+
+.checkbox-wrapper label,
+.radio-wrapper label {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    user-select: none;
+}
+
+.checkbox-wrapper input[type="checkbox"],
+.radio-wrapper input[type="radio"] {
+    /*display: none;*/
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-wrapper .checkbox,
+.radio-wrapper .radio {
+    flex: 0 0 auto;
+    display: block;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+.radio-wrapper .radio {
+    border-radius: 15px;
+}
+
+.checkbox-wrapper.label-right .checkbox,
+.radio-wrapper.label-right .radio {
+    margin-right: 13px;
+}
+
+.checkbox-wrapper.label-left .label,
+.radio-wrapper.label-left .label {
+    order: 1;
+}
+
+.checkbox-wrapper.label-left .checkbox,
+.radio-wrapper.label-left .radio {
+    margin-left: 13px;
+    order: 2;
+}
+
+.checkbox-wrapper .checkbox-outer,
+.radio-wrapper .radio-outer {
+    position: relative;
+    display: flex;
+}
+
+.checkbox-wrapper .checkbox,
+.radio-wrapper .radio {
+    overflow: hidden;
+}
+
+.checkbox-wrapper .tick,
+.radio-wrapper .tick {
+    display: block;
+    position: absolute;
+    content: '';
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.checkbox-wrapper .tick {
+    width: 75%;
+    height: 75%;
+    top: 12.5%;
+    left: 12.5%;
+    background-color: #0288D2;
+    border-radius: 4px;
+}
+
+.radio-wrapper .tick {
+    width: 11px;
+    height: 11px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 11px;
+    background-color: #0288D2;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .checkbox-outer .checkbox .tick,
+.radio-wrapper input[type="radio"]:checked + .radio-outer .radio .tick {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 1;
+}
+
+.checkbox-wrapper input[type="checkbox"]:focus + .checkbox-outer .checkbox,
+.radio-wrapper input[type="radio"]:focus + .radio-outer .radio {
+    border-color: #000;
+}
+
+.checkbox-wrapper input[type="checkbox"]:focus + .checkbox-outer .label,
+.radio-wrapper input[type="radio"]:focus + .radio-outer .label {
+    font-weight: bold;
+}
+
+.checkbox-wrapper input[type="checkbox"]:not(:disabled) + .checkbox-outer,
+.radio-wrapper input[type="radio"]:not(:disabled) + .radio-outer {
+    cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"]:disabled + .checkbox-outer .tick:after,
+.radio-wrapper input[type="radio"]:disabled + .radio-outer .tick:after {
+    display: block; 
+    content: '';
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background-color: white;
+    opacity: 0.75;
+    left: -2px;
+    top: -2px;
+    border-radius: 0;
+}
+
+.checkbox.wrapper .label,
+.radio.wrapper .label {
+    display: flex;
+    font-size: 16px;
+}
+
+.checkbox-wrapper input[type="checkbox"]:disabled + .checkbox-outer .label,
+.radio-wrapper input[type="radio"]:disabled + .radio-outer .label {
+    opacity: 0.5;
+}
+
+.form-item.search {
+    position: relative;    
+}
+
+.form-item.search .text {
+    padding: 0 46px 0 16px;
+}
+
+.form-item.search .submit {
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%) translateZ(0);
+    width: 19px;
+    height: 19px;
+    min-width: 0;
+    min-height: 0;
+    background: url('../images/icon-search.svg') no-repeat 0 0 transparent;
+    background-size: contain;
+    border: none;
+    text-indent: -9999px;
+}
+
+.form-item.search .submit:focus {
+    outline: none;
+}

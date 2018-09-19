@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" name="viewport" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="assets/css/flex.css" />
+    <link rel="stylesheet" href="assets/css/forms.css" />
+    <link rel="stylesheet" href="assets/css/buttons.css" />
+    <link rel="stylesheet" href="assets/css/color-scheme.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="container d-f r15">
+      <div class="f-c f-g-1 f-s-1 p15 t-a-c">COL</div>
+      <div class="f-c w50 p15 t-a-c">COL</div>
+      <div class="f-c f-g-1 f-s-1 p15 t-a-c">COL</div>
+    </div>
+
+    <fieldset class="container">
+      <legend>Margins</legend>
+      <div class="d-f r15 f-a-c">
+        <div class="f-c p15 border-black w10">
+          <div class="f-c m-t0 border-black">.m-t0</div>
+        </div>
+
+        <div class="f-c p15 border-black w10">
+          <div class="f-c m-t5 border-black">.m-t5</div>
+        </div>
+
+        <div class="f-c p15 border-black w10">
+          <div class="f-c m-t10 border-black">.m-t10</div>
+        </div>
+
+        <div class="f-c p15 border-black w10">
+          <div class="f-c m-t15 border-black">.m-t15</div>
+        </div>
+
+        <div class="f-c p15 border-black w10">
+          <div class="f-c m-t30 border-black">.m-t30</div>
+        </div>
+
+        <div class="f-c p15 border-black w10">
+          <div class="f-c m-b30 border-black">.m-b30</div>
+        </div>
+
+        <div class="f-c p15 border-black w10">
+          <div class="f-c m-b15 border-black">.m-b15</div>
+        </div>
+
+        <div class="f-c p15 border-black w10">
+          <div class="f-c m-b10 border-black">.m-b10</div>
+        </div>
+
+        <div class="f-c p15 border-black w10">
+          <div class="f-c m-b5 border-black">.m-b5</div>
+        </div>
+
+        <div class="f-c p15 border-black w10">
+          <div class="f-c m-b0 border-black">.m-b0</div>
+        </div>
+      </div>
+
+      <div class="d-f r15 f-a-c">
+        <div class="f-c p15 border-black w50">
+          <div class="f-c m-r0 border-black">.m-r0</div>
+          <div class="f-c m-r5 border-black">.m-r5</div>
+          <div class="f-c m-r10 border-black">.m-r10</div>
+          <div class="f-c m-r15 border-black">.m-r15</div>
+          <div class="f-c m-r30 border-black">.m-r30</div>
+        </div>
+
+        <div class="f-c p15 border-black w50">
+          <div class="f-c m-l0 border-black">.m-l0</div>
+          <div class="f-c m-l5 border-black">.m-l5</div>
+          <div class="f-c m-l10 border-black">.m-l10</div>
+          <div class="f-c m-l15 border-black">.m-l15</div>
+          <div class="f-c m-l30 border-black">.m-l30</div>
+        </div>
+      </div>
+
+
+    </fieldset>
+
+    <div class="container">
+      <form method="POST">
+        <div class="d-f r15">
+          <div class="form-item f-c p15 w33">
+            <input type="text" class="text" placeholder="type something here">
+          </div>
+
+          <div class="form-item f-c p15 w33">
+            <textarea placeholder="type something here"></textarea>
+          </div>
+
+          <div class="form-item f-c p15 w33">
+            <select>
+              <option>Pick me!</option>
+              <option>No, pick me!</option>
+              <option>No, pick me!</option>
+              <option>No, pick me!</option>
+              <option>No, pick me!</option>
+              <option>No, pick me!</option>
+              <option>No, pick me!</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="d-f r15">
+          <div class="form-item f-c p15 w20 checkbox-wrapper label-left">
+            <label><input type="checkbox" name="checkbox"><div class="checkbox-outer"><div class="checkbox"><span class="tick"></span></div><span class="label">Check me pls!</span></div></label>
+          </div>
+
+          <div class="form-item f-c p15 w20 checkbox-wrapper label-right">
+            <label><input type="checkbox" name="checkbox" checked><div class="checkbox-outer"><div class="checkbox"><span class="tick"></span></div><span class="label">Uncheck me pls!</span></div></label>
+          </div>
+
+          <div class="form-item f-c p15 w20 checkbox-wrapper label-left">
+            <label><input type="checkbox" name="checkbox" disabled><div class="checkbox-outer"><div class="checkbox"><span class="tick"></span></div><span class="label">You cant check me :(</span></div></label>
+          </div>
+
+          <div class="form-item f-c p15 w20 checkbox-wrapper label-right">
+            <label><input type="checkbox" name="checkbox" checked disabled><div class="checkbox-outer"><div class="checkbox"><span class="tick"></span></div><span class="label">You cant uncheck me :)</span></div></label>
+          </div>
+        </div>
+
+        <div class="d-f r15">
+          <div class="form-item f-c p15 w20 radio-wrapper label-left">
+            <label><input type="radio" name="radio"><div class="radio-outer"><div class="radio"><span class="tick"></span></div><span class="label">Check me pls!</span></div></label>
+          </div>
+          
+          <div class="form-item f-c p15 w20 radio-wrapper label-right">
+            <label><input type="radio" name="radio"><div class="radio-outer"><div class="radio"><span class="tick"></span></div><span class="label">Check me pls!</span></div></label>
+          </div>
+          
+          <div class="form-item f-c p15 w20 radio-wrapper label-left">
+            <label><input type="radio" name="radio"><div class="radio-outer"><div class="radio"><span class="tick"></span></div><span class="label">Check me pls!</span></div></label>
+          </div>
+          
+          <div class="form-item f-c p15 w20 radio-wrapper label-right">
+            <label><input type="radio" name="radio" disabled><div class="radio-outer"><div class="radio"><span class="tick"></span></div><span class="label">Disabled</span></div></label>
+          </div>
+        </div>
+
+        <div class="d-f r15">
+          <div class="form-item search f-c p15 w20">
+            <input type="text" class="text" placeholder="search something...">
+          </div>
+        </div>
+
+        <div class="d-f r15">
+          <div class="f-c p15 w20">
+            <button class="button bg-blue bg-red-hover c-white h-p15 v-p5">.button.bg-blue</button>
+          </div>
+
+          <div class="f-c p15 w20">
+            <button class="button bg-red bg-orange-hover c-white h-p15 v-p5">.button.bg-red</button>
+          </div>
+
+          <div class="f-c p15 w20">
+            <button class="button bg-green bg-white-hover c-white c-black-hover border-green border-black-hover h-p15 v-p5">.button.bg-green</button>
+          </div>
+
+          <div class="f-c p15 w20">
+            <button class="button bg-orange c-white h-p15 v-p5">.button.bg-orange</button>
+          </div>
+        </div>
+
+        <div class="d-f r15">
+          <div class="f-c p15 w20">
+            <button class="button bg-blue c-white p15 w100">.button.bg-blue.w100</button>
+          </div>
+
+          <div class="f-c p15 w20">
+            <button class="button bg-red c-white p15 w100">.button.bg-red.w100</button>
+          </div>
+
+          <div class="f-c p15 w20">
+            <button class="button bg-green c-white p15 w100">.button.bg-green.w100</button>
+          </div>
+
+          <div class="f-c p15 w20">
+            <button class="button bg-orange c-white p15 w100">.button.bg-orange.w100</button>
+          </div>
+        </div>
+
+        <div class="d-f r15">
+          <div class="f-c p15 w20 d-f f-a-c">
+            <img class="m-r15" width="15" height="15" src="assets/images/icon-google.svg">
+            <span>Log in with google</span>
+          </div>
+          
+          <div class="f-c p15 w20">
+            <button class="button bg-white bg-black-hover c-white-hover border-black p15 w100 d-f f-a-c" type="button">
+              <img class="m-r15" width="15" height="15" src="assets/images/icon-google.svg">
+              <span>Log in with google</span>
+            </button>
+          </div>
+
+          <div class="f-c p15 w20 d-f f-a-c">
+            <span class="m-r15">Log in with google</span>
+            <img width="15" height="15" src="assets/images/icon-google.svg">
+          </div>
+
+          <div class="f-c p15 w20">
+            <button class="button bg-white bg-black-hover c-white-hover border-black p15 w100 d-f f-a-c" type="button">
+              <span class="m-r15">Log in with google</span>
+              <img width="15" height="15" src="assets/images/icon-google.svg">
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

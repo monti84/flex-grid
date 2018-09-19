@@ -1,0 +1,112 @@
+.c-white {
+    color: #fff;
+}
+
+.c-black {
+    color: #000;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-blue {
+    background-color: #456cd5;
+}
+
+.bg-red {
+    background-color: #c20518;
+}
+
+.bg-green {
+    background-color: #52a70e;
+}
+
+.bg-orange {
+    background-color: #efb61c;
+}
+
+.border-white {
+    border: 1px solid #fff;
+}
+
+.border-black {
+    border: 1px solid #000;
+}
+
+.border-blue {
+    border: 1px solid #456cd5;
+}
+
+.border-red {
+    border: 1px solid #c20518;
+}
+
+.border-green {
+    border: 1px solid #52a70e;
+}
+
+.border-orange {
+    border: 1px solid #efb61c;
+}
+
+
+.c-white-hover:hover {
+    color: #fff;
+}
+
+.c-black-hover:hover {
+    color: #000;
+}
+
+.bg-white-hover:hover {
+    background-color: #fff;
+}
+
+.bg-black-hover:hover {
+    background-color: #000;
+}
+
+.bg-blue-hover:hover {
+    background-color: #456cd5;
+}
+
+.bg-red-hover:hover {
+    background-color: #c20518;
+}
+
+.bg-green-hover:hover {
+    background-color: #52a70e;
+}
+
+.bg-orange-hover:hover {
+    background-color: #efb61c;
+}
+
+.border-white-hover:hover {
+    border: 1px solid #fff;
+}
+
+.border-black-hover:hover {
+    border: 1px solid #000;
+}
+
+.border-blue-hover:hover {
+    border: 1px solid #456cd5;
+}
+
+.border-red-hover:hover {
+    border: 1px solid #c20518;
+}
+
+.border-green-hover:hover {
+    border: 1px solid #52a70e;
+}
+
+.border-orange-hover:hover {
+    border: 1px solid #efb61c;
+}
